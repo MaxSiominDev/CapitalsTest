@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="parts_of_world">
+        <item>Europe</item>
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>America</item>
+    </array>
+
+    <!-- For settings -->
+    <string-array name="themes">
+        <item>@string/automatically</item>
+        <item>@string/light</item>
+        <item>@string/dark</item>
+    </string-array>
+
+    <!-- For settings -->
+    <string-array name="themes_values">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
