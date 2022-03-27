@@ -30,10 +30,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.apply {
             buttonNewGame.setOnClickListener {
-                if (viewModel.sharedPrefs.getStringSet(PARTS_OF_WORLD, setOf())!!.size > 0)
-                    findNavController().navigate(R.id.action_homeFragment_to_gameFragment)
-                else
-                    viewModel.toast(R.string.need_more_parts_of_world, Toast.LENGTH_SHORT)
+                findNavController().navigate(R.id.action_homeFragment_to_gameFragment)
             }
 
             buttonSettings.setOnClickListener {

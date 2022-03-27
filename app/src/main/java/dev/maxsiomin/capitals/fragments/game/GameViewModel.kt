@@ -85,7 +85,10 @@ class GameViewModel @Inject constructor(uiActions: UiActions) : BaseViewModel(ui
     }
 
     private fun getQuestions(): List<String> {
-        val requestedTopics = sharedPrefs.getStringSet(PARTS_OF_WORLD, setOf())!!.toSet()
+        var requestedTopics = sharedPrefs.getStringSet(PARTS_OF_WORLD, setOf())!!.toSet()
+        if (requestedTopics.isEmpty())
+            requestedTopics = context.resources.getStringArray(R.array.parts_of_world).toSet()
+
         val questions = mutableSetOf<String>()
 
         if ("Europe" in requestedTopics) questions += europe.keys
