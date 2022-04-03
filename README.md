@@ -2,10 +2,10 @@
 Try to guess what is each country's capital city!
 ## Installation
 
-* Download [apk](https://maxsiomin.dev/libpass)
+* Download [apk](https://maxsiomin.dev/capitals)
 * Clone the repo using git:
 ```bash
-git clone https://github.com/MaxSiominDev/LibPass.git
+git clone https://github.com/MaxSiominDev/CapitalsTest.git
 ```
 ## Requirements
 
